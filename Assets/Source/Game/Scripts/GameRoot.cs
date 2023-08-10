@@ -20,7 +20,7 @@ public class GameRoot : MonoBehaviour
 
         foreach (EnemySpawner spawner in _enemySpawners)
             spawner.StartSpawn();
-
+        
         //var wallJump = new WallJump(_movementInput);
     }
 }

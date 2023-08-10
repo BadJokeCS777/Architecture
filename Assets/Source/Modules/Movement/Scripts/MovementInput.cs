@@ -11,8 +11,6 @@ namespace Movement
 
         private bool _active;
 
-        public IMovementState State;
-        
         private void Update()
         {
             if (_active == false)
@@ -22,7 +20,7 @@ namespace Movement
             
             _movement.Move(direction);
         }
-
+        
         public void Activate()
         {
             _active = true;
@@ -32,10 +30,5 @@ namespace Movement
         {
             _active = false;
         }
-    }
-
-    public interface IMovementState
-    {
-        public bool InAir { get; }
     }
 }
