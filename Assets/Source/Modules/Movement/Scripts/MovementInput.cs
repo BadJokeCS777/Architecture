@@ -16,7 +16,7 @@ namespace Movement
             if (_active == false)
                 return;
             
-            Vector3 direction = new Vector3(Input.GetAxisRaw(Horizontal), 0f, Input.GetAxisRaw(Vertical));
+            Vector3 direction = new (Input.GetAxisRaw(Horizontal), 0f, Input.GetAxisRaw(Vertical));
             
             _movement.Move(direction);
         }
